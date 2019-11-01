@@ -137,7 +137,7 @@ data "aws_iam_policy_document" "ecs_instance_policy" {
 }
 
 resource "aws_iam_instance_profile" "Alkermes_ECSInstanceProfile" {
-  name = "${var.env}-${var.dept}-${var.application}-ECSInstanceProfile"
+  name = "${var.env}-${var.dept}-${var.application}-ECSInstanceProfile-1"
   path = "/"
   role = "${aws_iam_role.Alkermes_ECSInstanceRole.id}"
 }
