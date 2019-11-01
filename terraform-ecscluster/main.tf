@@ -266,9 +266,8 @@ resource "aws_launch_configuration" "Alkermes_ECS_AUTOSCALE_CONF" {
   instance_type               = "${var.ecs_container_instance_type}"
   iam_instance_profile        = "${aws_iam_instance_profile.Alkermes_ECSInstanceProfile.id}"
   security_groups             = ["${aws_security_group.Alkermes_ECS_SERVICE_SG.id}"]
-# security_groups             = ["${aws_security_group.task_api_sg.id}"]
   key_name                    = "${var.alkermes_ecs_key_pair_name}"
-  associate_public_ip_address = true
+  associate_public_ip_address = false
   user_data                   = "${data.template_file.Alkermes_ECS_USER_DATA.rendered}"
 
   root_block_device {
