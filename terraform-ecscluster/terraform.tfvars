@@ -13,8 +13,8 @@ vpc_cidr="16.0.0.0/16" # Need to change the value
 az= ["us-east-1a"]
 #web_subnets_cidr = ["10.194.0.0/24","10.194.1.0/24"]
 #app_subnets_cidr = ["10.194.2.0/23","10.194.6.0/24"]
-#web_subnets      = ["subnet-07a63fe1317a3da4d","subnet-077be3e827f05ef25"]
-app_subnets      = ["subnet-011938523af181016","subnet-0f6b146089a8e2053"]
+app_subnets      = ["subnet-003761998c7ae7640","subnet-0bbf4cbc783e4d27d"]
+web_subnets      = ["subnet-01a180a3516193c59","subnet-0f6b146089a8e2053"]
 ingress_cidr_blocks_self = "71.244.135.202/32"
 
 //ECS Load Balancer details
