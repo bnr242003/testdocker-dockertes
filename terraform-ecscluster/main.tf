@@ -327,7 +327,7 @@ resource "aws_alb_target_group" "Alkermes_LB_TG" {
 
 resource "aws_alb" "Alkermes_LB" {
   name            = "${var.env}-${var.dept}-${var.application}-LB"
-  subnets         = ["${var.app_subnets}"]
+  subnets         = ["${var.web_subnets}"]
   security_groups = ["${aws_security_group.Alkermes_LB_SG.id}"]
 # security_groups = ["${aws_security_group.task_api_alb_sg.id}"]
 
